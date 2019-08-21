@@ -1,0 +1,52 @@
+header.KV-bg {
+  position: relative;
+  background: url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_ray.svg),
+              url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_city.svg),
+              $bgGradient;
+
+  background-repeat: repeat-x, no-repeat;
+  background-position: center 65% ,bottom;
+  background-size: 120%, contain;
+  background-origin: padding-box;
+  width: 100%;
+  height: auto;
+  border-bottom: 15px solid #603813;
+  @include breakpoint(760px 1200px){
+    background: url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_ray.svg),
+                url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_city.svg),
+                $bgGradient;
+    background-repeat: repeat-x, no-repeat;
+    background-position: center 80%, bottom;
+    background-size: 160%, cover;
+    width: 100%;
+    height: auto;
+  }
+  @include breakpoint(300px 759px){
+    background: url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_ray.svg),
+                url(https://www.pcschool.com.tw/activity/107/1070307_myFutureIsNotADream/build/images/bg_city.svg),
+                $bgGradient;
+    background-repeat: repeat-x, no-repeat;
+    background-position: center 10%, bottom,bottom;
+    background-size: 120%, 120%;
+    width: 100%;
+    height: auto;
+  }
+  .main {
+    text-align: center;
+    max-width: percentage(1000px/1920px);
+    margin: 0 auto 0;
+    position: relative;
+
+    @include breakpoint(max-width 1200px){
+      max-width: percentage(960px/1200px);
+    }
+    @include breakpoint(max-width 760px){
+      max-width: percentage(600px/600px);
+    }
+
+
+    .KV-group {
+      cursor: pointer;
+    }
+  }
+}

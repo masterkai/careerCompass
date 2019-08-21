@@ -1,0 +1,32 @@
+#GOTOP {
+  display: none;
+  width: 0px;
+  height: 40px;
+  cursor: pointer;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f34d59;
+  text-align: center;
+  color: #fff;
+  position: fixed;
+  z-index: 9999; }
+
+#GOTOP:hover {
+  background-color: #fdd237; }
+
+#GOTOP:hover i {
+  color: #f34d59; }
+
+#GOTOP i {
+  display: block;
+  vertical-align: middle;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 6px;
+  opacity: 0.1; }
+
+#GOTOP.active {
+  width: 40px; }
+
+#GOTOP.active i {
+  opacity: 1; }
